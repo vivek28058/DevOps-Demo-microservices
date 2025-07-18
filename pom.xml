@@ -68,6 +68,7 @@
         </dependencies>
     </dependencyManagement>
 
+<profiles>
     <profile>
     <id>springboot</id>
     <activation>
@@ -154,5 +155,6 @@
         </plugins>
     </build>
 </profile>
+</profiles>
 
 </project>

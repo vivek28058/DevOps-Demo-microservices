@@ -37,5 +37,11 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          token: ${{ secrets.SONAR_TOKEN }}
+          args: >
+            -Dsonar.projectKey=vivek28058_DevOps-Demo-microservices
+            -Dsonar.organization=vivek28058
+            -Dsonar.host.url=https://sonarcloud.io
+            -Dsonar.java.binaries=**/target/classes

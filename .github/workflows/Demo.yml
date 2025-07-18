@@ -40,7 +40,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           ./mvnw sonar:sonar \
-            -Dsonar.projectKey=vivek28058_spring-petclinic-microservices \
+            -Dsonar.projectKey=vivek28058_DevOps-Demo-microservices \
             -Dsonar.organization=vivek28058 \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=$SONAR_TOKEN
